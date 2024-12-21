@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fefbd8;
+            color: #333;
+        }
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff6f61;
+            font-weight: bold;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .timeline {
+            padding: 20px;
+        }
+        .timeline div {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #ffedcc;
+            border-left: 5px solid #ff6f61;
+        }
+        .proposal {
+            text-align: center;
+            padding: 40px;
+        }
+        .proposal h2 {
+            font-size: 2em;
+            color: #ff6f61;
+        }
+        .proposal button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Love Story</h1>
+    </header>
+    <nav>
+        <a href="#timeline">Timeline</a>
+        <a href="#proposal">The Proposal</a>
+    </nav>
+    <section id="timeline" class="timeline">
+        <h2>Our Journey Together</h2>
+        <div>
+            <strong>First Meeting:</strong> We met on a sunny afternoon at the café where everything began.
+        </div>
+        <div>
+            <strong>First Date:</strong> The movie night where we laughed till our cheeks hurt.
+        </div>
+        <div>
+            <strong>Special Moment:</strong> When you said, "This feels like home," and I knew you were the one.
+        </div>
+    </section>
+    <section id="proposal" class="proposal">
+        <h2>Will You Marry Me?</h2>
+        <button onclick="revealMessage()">Yes!</button>
+        <p id="message" style="display: none; margin-top: 20px; font-size: 1.5em;">You’ve made me the happiest person alive!</p>
+    </section>
+    <footer>
+        Made with love, for the love of my life.
+    </footer>
+    <script>
+        function revealMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
